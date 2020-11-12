@@ -89,3 +89,4 @@ vcsi
 lottie
 wand
 colour
+PyDictionary
