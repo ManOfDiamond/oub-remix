@@ -57,3 +57,5 @@ and many more people who aren't mentioned here, but may be found in [Contributor
 ## License
 
 This userbot licensed on [Raphielscape Public License](https://github.com/sahyam2019/oub-remix/blob/sql-extended/LICENSE) - Version 1.d, February 2020
+
+## Special Modded edition
