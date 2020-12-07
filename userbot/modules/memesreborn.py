@@ -326,6 +326,26 @@ async def paw(pawed):
         await pawed.edit("`(=ↀωↀ=)`")
 
 
+@register(outgoing=True, pattern="^.retard$")
+async def retard(event):
+    replied = await event.get_reply_message()
+    if not replied:
+        return await event.edit(
+            "__Reply to someone so i can check how retarded they are!__"
+        )
+    sender = replied.sender
+    reply = f"[{sender.first_name}](tg://user?id={sender.id}) __is {randint(0, 101)}% retarded!__"
+    await event.edit(reply, link_preview=False)
+
+
+@register(outgoing=True, pattern="^Oof$")
+async def Oof(woof):
+    t = "Oof"
+    for _ in range(15):
+        t = t[:-1] + "of"
+        await woof.edit(t)
+
+
 @register(outgoing=True, pattern="^.tf$")
 async def tf(focc):
     if not focc.text[0].isalpha() and focc.text[0] not in ("/", "#", "@", "!"):
